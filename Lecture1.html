@@ -1,91 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="Favicon Icon.png" type="image/x-icon">
-  <title>Lecture 1 - Notes</title>
-</head>
-<body>
-  <center>
-    <h1>📚 Lecture 1: Notes</h1>
-    <p><b>Welcome!</b> Here are my notes from <i>Lecture 1.</i></p>
-    <hr>
-  </center>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Favicon Icon.png" type="image/x-icon" />
+    <title>Lecture 1 - Notes</title>
+  </head>
+  <body>
+    <center>
+      <h1>📚 Lecture 1: Notes</h1>
+      <p><b>Welcome!</b> Here are my notes from <i>Lecture 1.</i></p>
+      <hr />
+    </center>
 
-  <!-- Navbar with all lectures -->
-  <nav>
-    <a href="index.html" target="_blank">Home</a> |
-    <a href="#">Lecture 1</a> |
-    <a href="Lecture2.html" target="_blank">Lecture 2</a> |
-    <a href="Lecture3.html" target="_blank">Lecture 3</a> |
-    <a href="Lecture4.html" target="_blank">Lecture 4</a> |
-    <a href="Lecture5.html" target="_blank">Lecture 5</a> |
-    <a href="Lecture6.html" target="_blank">Lecture 6</a>
-  </nav>
-  <hr>
+    <!-- Navbar with all lectures -->
+    <nav>
+      <a href="index.html" target="_blank">Home</a> |
+      <a href="#">Lecture 1</a> |
+      <a href="Lecture2.html" target="_blank">Lecture 2</a> |
+      <a href="Lecture3.html" target="_blank">Lecture 3</a> |
+      <a href="Lecture4.html" target="_blank">Lecture 4</a> |
+      <a href="Lecture5.html" target="_blank">Lecture 5</a> |
+      <a href="Lecture6.html" target="_blank">Lecture 6</a>
+    </nav>
+    <hr />
 
-  <!-- Main Content -->
-   <h2>What is Internet?</h2>
-   <ul>
-    <li>The Internet is a huge network of computers all over the world that can communicate with each other.</li>
-    <li>Computers follow rules called protocols to send and receive information safely and correctly.</li>
-    <li>Hum Internet ka use roz karte hain emails bhejne, friends se chat karne, videos dekhne, websites browse karne, online groups join karne, shopping karne, aur ghar ya office ke devices connect karne ke liye.</li>
-   </ul>
+    <!-- Main Content -->
+    <h2>What is Internet?</h2>
+    <ul>
+      <li>
+        The Internet is a huge network of computers all over the world that can
+        communicate with each other.
+      </li>
+      <li>
+        Computers follow rules called protocols to send and receive information
+        safely and correctly.
+      </li>
+      <li>
+        Hum Internet ka use roz karte hain emails bhejne, friends se chat karne,
+        videos dekhne, websites browse karne, online groups join karne, shopping
+        karne, aur ghar ya office ke devices connect karne ke liye.
+      </li>
+    </ul>
 
-   <h3>IP Address</h3>
-   <ul>
-    <li>IP stands for Internet Protocol.</li>
-    <li>IP Address ek unique address hai jo har computer ko Internet par allot hota hai.</li>
-    <li>When you connect your device to the Internet, the Internet service provider (ISP) assigns an IP address to your device. When you disconnect, that IP address can be given to someone else.
-        <h4>There are two types of IP (based on assignment) - </h4>
+    <img src="Network Diagram.png" alt="Internet Diagram" width="40%" />
+
+    <h3>IP Address</h3>
+    <ul>
+      <li>IP stands for Internet Protocol.</li>
+      <li>
+        IP Address ek unique address hai jo har computer ko Internet par allot
+        hota hai.
+      </li>
+      <li>
+        When you connect your device to the Internet, the Internet service
+        provider (ISP) assigns an IP address to your device. When you
+        disconnect, that IP address can be given to someone else.
+        <h4>There are two types of IP (based on assignment) -</h4>
         <ol>
-            <li><b>Static IP Address - </b> 
-                <ul>
-                    <li>Assigned manually or reserved by your ISP.</li>
-                    <li>It never changes, no matter how many times you connect.</li>
-                    <li>It is like your permanent house that never changes.</li>
-                </ul>
-            </li>
-            <li><b>Dynamic IP Address - </b>
-                <ul>
-                    <li>Assigned automatically by your Internet Service Provider (ISP) every time you connect.</li>
-                    <li>It changes when you disconnect and reconnect.</li>
-                    <li>Dynamic IP is like a temporary house: someone stays for a while, then leaves, and another person can use it.</li>
-                </ul>
-            </li>
+          <li>
+            <b>Static IP Address - </b>
+            <ul>
+              <li>Assigned manually or reserved by your ISP.</li>
+              <li>It never changes, no matter how many times you connect.</li>
+              <li>It is like your permanent house that never changes.</li>
+            </ul>
+          </li>
+          <li>
+            <b>Dynamic IP Address - </b>
+            <ul>
+              <li>
+                Assigned automatically by your Internet Service Provider (ISP)
+                every time you connect.
+              </li>
+              <li>It changes when you disconnect and reconnect.</li>
+              <li>
+                Dynamic IP is like a temporary house: someone stays for a while,
+                then leaves, and another person can use it.
+              </li>
+            </ul>
+          </li>
         </ol>
-        <h4>There are two types of IP (based on network) - </h4>
+        <h4>There are two types of IP (based on network) -</h4>
         <ol>
-            <li><b>Public IP Address - </b>
+          <li>
+            <b>Public IP Address - </b>
+            <ul>
+              <li>
+                A Public IP address is your
+                <b>global, unique address on the internet.</b>
+              </li>
+              <li>
+                Every device that accesses the Internet gets a unique public IP
+                (assigned by your ISP).
+              </li>
+              <li>
+                It must be <b>globally unique.</b> No two devices on the
+                internet can have the same public IP address at the same time.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <b>Private IP Address - </b>
+            <ul>
+              <li>
+                A Private IP address is a local address used only within your
+                own private network (e.g., your home Wi-Fi, your office
+                network).
+              </li>
+              <li>
+                Devices in the same network can see each other using private
+                IPs, but these are not visible on the Internet.
+              </li>
+              <li>
+                <b>Reserved Ranges: </b>The internet authorities have reserved
+                specific ranges of addresses just for this purpose. If you see
+                an IP address starting with one of these, you know it's a
+                private address:
                 <ul>
-                    <li>A Public IP address is your <b>global, unique address on the internet.</b></li>
-                    <li>Every device that accesses the Internet gets a unique public IP (assigned by your ISP).</li>
-                    <li>It must be <b>globally unique.</b> No two devices on the internet can have the same public IP address at the same time.</li>
+                  <li>
+                    10.0.0.0 to 10.255.255.255 (Used by large corporations)
+                  </li>
+                  <li>
+                    172.16.0.0 to 172.31.255.255 (Used by medium-sized networks)
+                  </li>
+                  <li>
+                    192.168.0.0 to 192.168.255.255 (Most common for home
+                    networks)
+                  </li>
                 </ul>
-            </li>
-            <li><b>Private IP Address - </b>
-              <ul>
-                <li>A Private IP address is a local address used only within your own private network (e.g., your home Wi-Fi, your office network).</li>
-                <li>Devices in the same network can see each other using private IPs, but these are not visible on the Internet.</li>
-                <li><b>Reserved Ranges: </b>The internet authorities have reserved specific ranges of addresses just for this purpose. If you see an IP address starting with one of these, you know it's a private address:
-                  <ul>
-                    <li>10.0.0.0 to 10.255.255.255 (Used by large corporations)</li>
-                    <li>172.16.0.0 to 172.31.255.255 (Used by medium-sized networks)</li>
-                    <li>192.168.0.0 to 192.168.255.255 (Most common for home networks)</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
+              </li>
+            </ul>
+          </li>
         </ol>
-    </li>
-   </ul>
+        <h4>There are two versions of IP Address -</h4>
+        <ol>
+          <li>
+            <b>IPv4 - </b>
+            <ul>
+              <li>IPv4 stands for Internet Protocol version 4.</li>
+              <li>It uses 32-bit addresses, e.g., 192.168.1.1.</li>
+              <li>It can support about 4.3 billion unique addresses.</li>
+              <li>Most Internet devices still use IPv4.</li>
+            </ul>
+          </li>
+          <li>
+            <b>IPv6 - </b>
+            <ul>
+              <li>IPv6 stands for Internet Protocol version 6.</li>
+              <li>
+                It uses 128-bit addresses, e.g.,
+                2001:0db8:85a3:0000:0000:8a2e:0370:7334.
+              </li>
+              <li>
+                The number of possible IPv6 addresses is 2^128, which is
+                roughly: 340,000,000,000,000,000,000,000,000,000,000,000,000
+                (340 undecillion)
+              </li>
+              <li>It is created because IPv4 addresses were running out.</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ul>
 
-  <center>
-    <footer>
-      <hr>
-      <p>&copy; 2025 Created by <b>Ranjay</b> | My Notes Project</p>
-    </footer>
-  </center>
-</body>
+    <h3>MAC Address</h3>
+    <ul>
+      <li>
+        A MAC (Media Access Control) Address is a unique, permanent serial
+        number burned into every network-capable piece of hardware (your
+        laptop's Wi-Fi card, your phone, your smart TV, the network port on your
+        desktop).
+      </li>
+      <li>It's used to identify a device on a local network.</li>
+      <li>
+        When devices communicate on the same network (like Wi-Fi or LAN), they
+        use MAC addresses to make sure the data goes to the correct device.
+      </li>
+      <li>
+        A MAC address is a 48-bit number. To make it readable for humans, it's
+        typically written as 12 hexadecimal digits.
+      </li>
+      <li>
+        The most common ways you'll see it displayed are:
+        <ol>
+          <li><b>Colon-Separated (Most Common):</b></li>
+          <span>3C:22:FB:A3:B4:C5</span>
+          <li><b>Hyphen-Separated (Common on Windows):</b></li>
+          <span>3C-22-FB-A3-B4-C5</span>
+          <li>
+            <b>Period-Separated (Used by Cisco and other network gear):</b>
+          </li>
+          <span>3c22.fba3.b4c5</span>
+          <li><b>No Separators (Less common, seen in some software):</b></li>
+          <span>3C22FBA3B4C5</span>
+        </ol>
+      </li>
+    </ul>
+
+    <h3>Port Number</h3>
+    <ul>
+      <li>
+        Port Number ek number hai jo batata hai ki computer ke kaunse
+        service/application ko data bhejna hai.
+      </li>
+      <li>The range of Port Number is from (0 - 65535)</li>
+      <li>
+        Some of the common Port Numbers are:
+        <ul>
+          <li>HTTP → 80</li>
+          <li>HTTPS → 443</li>
+          <li>Email → 25</li>
+        </ul>
+      </li>
+    </ul>
+
+    <img src="Data Travel.png" alt="Data Travel" width="50%" />
+
+    <h3>DNS (Domain Name System)</h3>
+    <ul>
+      <li>
+        DNS stands for Domain Name System. It is like a phone directory for the
+        Internet.
+      </li>
+      <li>
+        It translates human-friendly domain names (like coderarmy.in) into IP
+        addresses (like 172.21.30.11) that computers use to communicate.
+      </li>
+      <li>
+        When you type a website name in your browser, your computer asks a DNS
+        server for the corresponding IP address.
+      </li>
+      <li>
+        The DNS server responds with the IP, so your computer can connect to the
+        website.
+      </li>
+      <li>
+        Think of it like looking up a person's phone number in a phone book. You
+        know the name, but to call them, you need the number.
+      </li>
+    </ul>
+
+    <img src="DNS Image.png" alt="DNS Diagram" width="30%" />
+    <img
+      src="DNS Explaination.png"
+      alt="DNS Explaination Image"
+      width="69%"
+    /><br /><br />
+
+    <h3>Web Development</h3>
+    <ul>
+      <li>
+        Web Development means creating and maintaining websites or web
+        applications that run on the Internet.
+      </li>
+      <li>
+        It mainly has two sides:
+        <ol>
+          <li>
+            <b>Frontend (Client-side):</b>
+            <ul>
+              <li>
+                This is what the user sees on their browser (design, layout,
+                buttons, forms, images).
+              </li>
+              <li>Built using HTML, CSS, JavaScript.</li>
+              <li>
+                Example: The look and feel of a website like colors, navigation,
+                or login page design.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <b>Backend (Server-side):</b>
+            <ul>
+              <li>
+                This is what happens behind the scenes (data storage, server
+                logic, authentication).
+              </li>
+              <li>
+                Built using languages like PHP, Python, Java, Node.js, and
+                databases like MySQL, MongoDB.
+              </li>
+              <li>
+                Example: When you log in, the backend checks your
+                username/password from the database.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ul>
+
+    <img src="WebDev Image.png" alt="Cline-Server Diagram" width="50%" />
+
+    <h3>MERN Stack</h3>
+    <ul>
+      <li>
+        The MERN Stack is a popular set of technologies used to build modern
+        full-stack web applications.
+      </li>
+      <li>
+        It includes 4 main tools (M-E-R-N):
+        <ul>
+          <li><b>M: </b>MongoDB</li>
+          <li><b>E: </b>Express.js</li>
+          <li><b>R: </b>React.js</li>
+          <li><b>N: </b>Node.js</li>
+        </ul>
+      </li>
+    </ul>
+    <center>
+      <footer>
+        <hr />
+        <p>&copy; 2025 Created by <b>Ranjay</b> | My Notes Project</p>
+      </footer>
+    </center>
+  </body>
 </html>

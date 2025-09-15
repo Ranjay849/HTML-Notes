@@ -25,6 +25,100 @@
   </nav>
   <hr>
 
+  <main>
+    <h2>File Path system</h2>
+    <ul>
+      <li>A file path tells the browser where to find a file (like an image, CSS, JS, or another page).</li>
+      <li>It is used inside attributes such as <b>src</b> (for images, scripts) or <b>href</b> (for links, CSS).</li>
+      <li>File paths can be absolute (full location) or relative (based on current file location).
+        <h4>There are two types of File Paths</h4>
+        <ol>
+          <li><h5>Relative File Paths:</h5>
+            <ul>
+              <li>It shows the location relative to the current HTML file.</li>
+              <li>You will use this 99% of the time for linking your own files together (images, CSS, other HTML pages).</li>
+              <img src="Relative File Path.png" alt="Relative File Path Diagram" width="250px">
+              <h5>Here are the different scenarios:</h5>
+              <ol>
+                <li><b>Same Folder - </b>If the file is in the same folder as your HTML file:</li>
+                <img src="Scenerio 1.png" alt="Example Diagram" width="350px">
+                <li><b>Different Folder (Inside Subfolder) - </b>If the file is inside another folder:</li>
+                <img src="Scenerio 2.png" alt="Example Diagram" width="350px">
+                <li><b>Go Back One Folder (Using ../) - </b>If the file is in the parent folder:</li>
+                <img src="Scenerio 3.png" alt="Example Diagram" width="350px">
+                <li><b>Multiple Folder Levels - </b>If the file is deeper inside folders:</li>
+                <img src="Scenerio 4.png" alt="Example Diagram" width="350px">
+              </ol>
+            </ul>
+          </li>
+
+          <li><h5>Absolute File Paths:</h5>
+            <ul>
+              <li>It shows the complete URL or location of the file. It starts with http:// or https://.</li>
+              <li type="none"><b>When to use it:</b> You ONLY use absolute paths when you are linking to a resource that is NOT on your own website.
+              <ul>
+              <li>Linking to another website.</li>
+              <li>Using a font from Google Fonts.</li>
+              <li>Using an image from an image-hosting service.</li>
+              </ul>
+              </li>
+              <img src="Absolute File Path.png" alt="Absolute File Path Diagram" width="800px">
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <h5>Why We Don't Use Absolute File Paths - </h5>
+      <ul>
+        <li>Works only on your computer → Path like C:/Users/... runs only locally, not on other systems.</li>
+        <li>Not portable → If you move project to another folder/server, links will break.</li>
+        <li>Different OS problem → Windows uses \ while Linux /, macOS use /, so paths mismatch.</li>
+        <li>Security issues → Sharing absolute paths may expose your personal computer's directory structure (like username, system details), which is unsafe.</li>
+        <li>Bad practice → In professional web development, only relative paths are recommended.</li>
+      </ul>
+    </ul>
+
+    <h2>HTML Boilerplate Code</h2>
+    <ul>
+      <li>This is a block of code that you will start every single HTML file with. It's not something you need to reinvent each time; you just copy-paste it and fill in the blanks.</li>
+      <li>It's the "blueprint of the house" that you need before you can start putting in the walls (&lt;h1&gt;) and windows (&lt;img&gt;). <b>It looks like this - below is an image of the boilerplate. 👇</b></li>
+    </ul>
+    <img src="HTML Boiler Plate.png" alt="Boilerplate Image" width="100%">
+    <h3>The explanation of this BoilerPlate Code - </h3>
+    <ul>
+      <li><b>&lt;!DOCTYPE html&gt;</b> tells the browser that the document is written in HTML5 (the 5th version of HTML).</li>
+      <li><b>&lt;html lang="en"&gt; ... &lt;/html&gt;</b>: This is the root element that wraps your entire page. The lang="en" attribute declares that the primary language of the page content is English. This is very important for accessibility and SEO. You'd change "en" to "es" for Spanish, "hi" for Hindi, etc.</li>
+      <li><b>&lt;head&gt; ... &lt;/head&gt;</b>: The &lt;head&gt; tag is used to contain information about the webpage (not shown directly on the page). It helps browsers, search engines, and devices understand the page better.</li>
+      <li><b>&lt;meta charset="UTF-8"&gt;</b> ensures that all characters (letters, numbers, symbols, emojis, etc.) are displayed correctly.</li>
+      <li><b>&lt;meta name="viewport" ... &gt;</b> helps the webpage look good and readable on mobiles, tablets, and desktops.</li>
+      <li><b>&lt;title&gt; ... &lt;/title&gt;</b>: The &lt;title&gt; tag sets the text that appears in the browser tab, in bookmark lists, and in search engine results. It's a critical piece of metadata for both usability and SEO.</li>
+      <li><b>&lt;body&gt; ... &lt;/body&gt;</b>: The &lt;body&gt; section is the container for everything the user will actually see on the page: your headings, paragraphs, images, links, tables, etc. All the tags you've learned so far go inside the &lt;body&gt;.</li>
+    </ul>
+
+    <h4>But websites work even without Boilerplate</h4>
+    <ul>
+      <li>Browsers are smart - They automatically fill missing parts like &lt;html&gt; or &lt;head&gt;.</li>
+      <li>Basic code is enough - Even if you write only text or a &lt;p&gt; tag, the browser will still show it.</li>
+      <li>Default settings - Browser uses its own defaults for things like font, size, or page width.</li>
+      <li>HTML is forgiving - It is made in such a way that even incomplete code can run.</li>
+      <li>But in real projects, boilerplate is important for correct display, responsiveness, SEO, and professional coding.</li>
+    </ul>
+
+    <h2>Multipage Website</h2>
+    <ul>
+      <li>A multipage website is a site made up of multiple linked HTML pages, each showing different information.</li>
+      <li>Each page has its own HTML file (like index.html, about.html, contact.html).</li>
+      <li>Pages are connected to each other using links (&lt;a&gt; tag).</li>
+      <li>Common example: Home, About Us, Services, Contact Us.</li>
+      <li>Used when website has a lot of information, which cannot fit into a single page.</li>
+      <img src="Multipage Diagram.png" alt="Multipage Webpage Diagram" width="400px">
+    </ul>
+
+    <h2>The &lt;div&gt; (The Generic Box)</h2>
+    <ul>
+      <li></li>
+    </ul>
+  </main>
+
   <center>
     <hr>
     <footer>

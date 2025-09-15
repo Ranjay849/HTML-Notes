@@ -25,8 +25,280 @@
   </nav>
   <hr>
 
+  <main>
+    <h2>Nested List Elements</h2>
+    <ul>
+      <li>A nested list means a list inside another list. It is used when you want to show sub-items under a main item.</li>
+      <li>Both ordered lists (&lt;ol&gt;) and unordered lists (&lt;ul&gt;) can be nested.</li>
+    </ul>
+    
+    <h3>Example:</h3>
+      <img src="Nested Listed Image.png" alt="Nested List Code" width="500px">
+      <img src="Nested List Output.png" alt="Nested List Output" width="505px">
+
+    <h2>Table</h2>
+    <ul>
+      <li>A table is used to display information in rows and columns.</li>
+      <li>It helps organize data in a structured and readable format.</li>
+      <li>In HTML, tables are created using the &lt;table&gt; tag with different sub-tags.</li>
+      <img src="table code image.png" alt="Table Code Example" width="250px">
+    </ul>
+
+    <h3>Tags Used in Tables</h3>
+    <ul>
+      <li><b>&lt;table&gt;</b> → Defines the table.</li>
+      <li><b>&lt;tr&gt;</b> → Table Row (row of data).</li>
+      <li><b>&lt;th&gt;</b> → Table Header (bold and centered by default).</li>
+      <li><b>&lt;td&gt;</b> → Table Data (normal cell data).</li>
+      <li><b>&lt;thead&gt;</b> → Groups the header part of the table.</li>
+      <li><b>&lt;tbody&gt;</b> → Groups the main body content of the table.</li>
+      <li><b>&lt;tfoot&gt;</b> → Groups the footer part of the table (like totals, notes, etc.).</li>
+    </ul>
+
+    <h3>Example - 1</h3>
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Ranjay</td>
+          <td>Kumar</td>
+          <td>20</td>
+        </tr>
+
+        <tr>
+          <td>Sanjay</td>
+          <td>Kumar</td>
+          <td>22</td>
+        </tr>
+
+        <tr>
+          <td>Manjay</td>
+          <td>Kumar</td>
+          <td>25</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Example - 2</h3>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Contacts</th>
+        </tr>
+
+        <tbody>
+          <tr>
+            <td>Ranjay</td>
+            <td>1234567890</td>
+            <td>ranjay@gmail.com</td>
+          </tr>
+
+          <tr>
+            <td>Sanjay</td>
+            <td>9789874510</td>
+            <td>sanjay@gmail.com</td>
+          </tr>
+
+          <tr>
+            <td>Manjay</td>
+            <td>7735768910</td>
+            <td>manjay@gmail.com</td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+
+    <h3>Example - 3</h3>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Level 1</th>
+          <th>Level 2</th>
+          <th>Level 3</th>
+          <th>Info</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="6">System</td>
+          <td rowspan="4">System Apps</td>
+          <td rowspan="3">SystemEnv</td>
+          <td>App Test</td>
+          <td>foo</td>
+        </tr>
+
+        <tr>
+          <td>App Memory</td>
+          <td>foo</td>
+        </tr>
+
+        <tr>
+          <td>App Test</td>
+          <td>bar</td>
+        </tr>
+
+        <tr>
+          <td>SystemEnv2</td>
+          <td>App Test</td>
+          <td>bar</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">System Memory</td>
+          <td rowspan="2">Memory Test</td>
+          <td>Memory Func</td>
+          <td>foo</td>
+        </tr>
+
+        <tr>
+          <td>Apes Test</td>
+          <td>foo</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Example - 4</h3>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <thead>
+        <tr>
+          <th colspan="6">Time Table</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="7">Hours</td>
+        </tr>
+
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+
+        <tr>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Arts</td>
+        </tr>
+
+        <tr>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Arts</td>
+        </tr>
+
+        <tr>
+          <th colspan="5">Lunch</th>
+        </tr>
+
+        <tr>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Arts</td>
+        </tr>
+
+        <tr>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Arts</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Example - 5</h3>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <thead>
+        <tr>
+          <th rowspan="3">Day</th>
+          <th colspan="3">Seminar</th>
+        </tr>
+
+        <tr>
+          <th colspan="2">Schedule</th>
+          <th rowspan="2">Topic</th>
+        </tr>
+
+        <tr>
+          <th>Start</th>
+          <th>End</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2">Monday</td>
+          <td rowspan="2">08:00 AM</td>
+          <td rowspan="2">05:00 PM</td>
+          <td>Introduction</td>
+        </tr>
+
+        <tr>
+          <td>Uses</td>
+        </tr>
+
+        <tr>
+          <td rowspan="4">Tuesday</td>
+          <td>08:00 AM</td>
+          <td>11:00 PM</td>
+          <td>--</td>
+        </tr>
+
+        <tr>
+          <td>11:00 AM</td>
+          <td>02:00 PM</td>
+          <td>Learn</td>
+        </tr>
+
+        <tr>
+          <td>02:00 PM</td>
+          <td>08:00 PM</td>
+          <td rowspan="2">--</td>
+        </tr>
+
+        <tr>
+          <td>10:00 PM</td>
+          <td>01:00 PM</td>
+        </tr>
+
+        <tr>
+          <td>Wed-Fri</td>
+          <th colspan="2">Full Day</th>
+          <td>Practical</td>
+        </tr>
+
+        <tr>
+          <td>Sat-Sun</td>
+          <td colspan="2">11:00 AM - 05:00 PM</td>
+          <td>Extra Class</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
   <center>
     <footer>
+      <hr>
       <p>&copy; 2025 Created by <b>Ranjay</b> | My Notes Project</p>
     </footer>
   </center>

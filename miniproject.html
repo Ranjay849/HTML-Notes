@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Registration Form</title>
+</head>
+<body>
+  <h1>University Registration Form</h1>
+  <p>Please fill out the form below to register.</p>
+
+  <form action="submit.php" method="post">
+
+    <!-- Personal Details Section -->
+    <fieldset>
+      <legend><b>Personal Details</b></legend>
+
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="firstname" placeholder="e.g., Arjun"><br><br>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lastname" placeholder="e.g., Kumar"><br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br><br>
+
+      <label for="photo">Upload Your Photo:</label>
+      <input type="file" id="photo" name="photo"><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Contact Information Section -->
+    <fieldset>
+      <legend><b>Contact Information</b></legend>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com"><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g., 9876543210"><br><br>
+
+      <label for="address">Mailing Address:</label><br>
+      <textarea id="address" name="address" rows="3" cols="40" placeholder="Street Address, City, State, ZIP Code"></textarea>
+    </fieldset>
+
+    <br>
+
+    <!-- Academic Information Section -->
+    <fieldset>
+      <legend><b>Academic Information</b></legend>
+
+      <label for="course">Select Your Course:</label>
+      <select id="course" name="course">
+        <option>-- Choose a course --</option>
+        <option value="bca">BCA</option>
+        <option value="bsc">B.Sc</option>
+        <option value="ba">BA</option>
+        <option value="bcom">B.Com</option>
+      </select><br><br>
+
+      <label>Extracurricular Interests:</label><br>
+      <input type="checkbox" id="sports" name="interests" value="sports">
+      <label for="sports">Sports</label><br>
+      <input type="checkbox" id="arts" name="interests" value="arts">
+      <label for="arts">Music & Arts</label><br>
+      <input type="checkbox" id="tech" name="interests" value="tech">
+      <label for="tech">Technology Clubs</label><br>
+      <input type="checkbox" id="volunteer" name="interests" value="volunteer">
+      <label for="volunteer">Volunteering</label><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Account Section -->
+    <fieldset>
+      <legend><b>Create Your Account</b></legend>
+
+      <label for="password">Create a Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+
+      <label for="securityQ">Security Question:</label>
+      <select id="securityQ" name="securityQ">
+        <option>What was your first pet's name?</option>
+        <option>What is your mother's maiden name?</option>
+        <option>What was your first school?</option>
+      </select><br><br>
+
+      <label for="answer">Security Answer:</label>
+      <input type="text" id="answer" name="answer"><br><br>
+
+      <input type="checkbox" id="terms" name="terms">
+      <label for="terms">I agree to the Terms and Conditions.</label><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Submit and Reset -->
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear Form">
+
+  </form>
+</body>
+</html>

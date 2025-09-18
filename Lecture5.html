@@ -1,34 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="Favicon Icon.png" type="image/x-icon">
-  <title>Lecture 5 - Notes</title>
-</head>
-<body>
-  <center>
-    <h1>📚 Lecture 5: Notes</h1>
-    <p><b>Welcome!</b> Here are my notes from <i>Lecture 5.</i></p>
-    <hr>
-  </center>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Favicon Icon.png" type="image/x-icon" />
+    <title>Lecture 5 - Notes</title>
+  </head>
+  <body>
+    <center>
+      <h1>📚 Lecture 5: Notes</h1>
+      <p><b>Welcome!</b> Here are my notes from <i>Lecture 5.</i></p>
+      <hr />
+    </center>
 
-  <!-- Navbar with all lectures -->
-  <nav>
-    <a href="index.html" target="_blank">Home</a> |
-    <a href="Lecture1.html" target="_blank">Lecture 1</a> |
-    <a href="Lecture2.html" target="_blank">Lecture 2</a> |
-    <a href="Lecture3.html" target="_blank">Lecture 3</a> |
-    <a href="Lecture4.html" target="_blank">Lecture 4</a> |
-    <a href="#">Lecture 5</a> |
-    <a href="Lecture6.html" target="_blank">Lecture 6</a>
-  </nav>
-  <hr>
+    <!-- Navbar with all lectures -->
+    <nav>
+      <a href="index.html" target="_blank">Home</a> |
+      <a href="Lecture1.html" target="_blank">Lecture 1</a> |
+      <a href="Lecture2.html" target="_blank">Lecture 2</a> |
+      <a href="Lecture3.html" target="_blank">Lecture 3</a> |
+      <a href="Lecture4.html" target="_blank">Lecture 4</a> |
+      <a href="#">Lecture 5</a> |
+      <a href="Lecture6.html" target="_blank">Lecture 6</a>
+    </nav>
+    <hr />
 
-  <center>
-    <footer>
-      <p>&copy; 2025 Created by <b>Ranjay</b> | My Notes Project</p>
-    </footer>
-  </center>
-</body>
+    <main>
+      <h2>Forms in HTML</h2>
+      <ul>
+        <li>A form is used to collect information from the user.</li>
+        <li>Example: Login form, signup form, search bar, feedback form.</li>
+        <li>
+          In HTML, forms are created using the &lt;form&gt; tag.
+          <ol>
+            <h3>Form Elements (Inputs inside form)</h3>
+            <ul>
+              <li>
+                This is the most common form tag. It's a self-closing tag that
+                creates an input field. Its behavior changes based on its type
+                attribute.
+              </li>
+            </ul>
+            <br />
+            <li><b>Text Box:</b> Used to take single-line input.</li>
+            <img
+              src="input text image.png"
+              alt="type text example"
+              width="300px"
+            />
+            <h4>The Need for Meaning - The &lt;label&gt;</h4>
+            <ul>
+              <li>
+                Suppose you visit a website and see a form that has only input
+                fields, but no labels. You will get confused — should you enter
+                your name, email, address, or something else?
+              </li>
+              <li>
+                To solve this, we need a descriptive piece of text. The correct
+                HTML tag for this is the <b>&lt;label&gt;</b>. It is specially
+                designed to be the title/description for a form field.
+              </li>
+              <img src="label image.png" alt="label example" width="300px" />
+              <li>
+                Now, you can easily understand that you have to enter your
+                <b>First Name</b> in the input field.
+              </li>
+              <li>
+                If we only write the label and input separately (without using
+                <b>for</b> and <b>id</b>), then they have no connection and
+                behave like different elements.
+              </li>
+            </ul>
+            <h4>The Need for Connection - id and for</h4>
+            <ul>
+              <li>
+                To connect them, we use <b>id</b> in the input field and
+                <b>for</b> in the label.
+              </li>
+              <li>
+                The value of <b>for</b> in the label must be the same as the
+                value of <b>id</b> in the input.
+              </li>
+              <img
+                src="connection image.png"
+                alt="id for connection"
+                width="400px"
+              />
+              <li>
+                Now, when you click on the text <b>First Name:</b>, the cursor
+                will automatically move to the input box. This makes the form
+                easier to use and more accessible.
+              </li>
+            </ul>
+            <h4>The Need for Submission - The &lt;form&gt; and submit</h4>
+            <ul>
+              <li>
+                Collecting user input is not enough — we also need a way to
+                <b>send (submit)</b> that data to the server.
+              </li>
+              <li>
+                In HTML, this is done using the <b>&lt;form&gt;</b> tag. It
+                works as a container that holds all input fields.
+              </li>
+              <li>
+                To actually send the data, we use a <b>submit button</b>. The
+                simplest way is &lt;input type="submit"&gt;.
+              </li>
+              <img src="submit image.png" alt="submit example" width="550px" />
+              <li>
+                We now have a complete visual form with two fields and a submit
+                button. When you click the button, the page reloads, but the
+                data doesn't go anywhere yet.
+              </li>
+            </ul>
+            <h4>The Need for Data Identification - The name Attribute</h4>
+            <ul>
+              <li>
+                When the form is submitted, the browser needs to package the
+                data to send to a server. How does it label the data?
+              </li>
+              <li>
+                If a user types "Arjun" in the first box, how does the server
+                know that "Arjun" is the first name? The id attribute is only
+                for use within the page; it is not sent to the server.
+              </li>
+              <li>
+                For this, we use the <b>name</b> attribute in every input field.
+                It works as an identifier for the data.
+              </li>
+              <li>
+                The <b>name</b> attribute becomes the <b>key</b> and the user 's
+                input becomes the <b>value</b>. Together, they are sent to the
+                server as <b>key=value</b>.
+              </li>
+              <img src="name image.png" alt="name example" width="550px" />
+              <li>
+                Now we have a truly functional form, ready to send meaningful
+                data. When submitted, the browser will create a package that
+                looks like this:
+              </li>
+              <ul>
+                <li><b>firstName = </b>(whatever the user typed)</li>
+                <li><b>lastName = </b>(whatever the user typed)</li>
+              </ul>
+            </ul>
+            <h4>The Need for "Select One" - Radio Buttons</h4>
+            <ul>
+              <li>
+                Sometimes in a form, we need the user to choose only
+                <b>one option</b> from a list. Example: selecting
+                <b>gender</b> (Male / Female).
+              </li>
+              <li>
+                For this, HTML provides the <b>radio button</b> input type.
+              </li>
+              <li>
+                All radio buttons that belong to the same group must share the
+                same <b>name</b> attribute. This ensures only one option can be
+                selected at a time.
+              </li>
+              <img src="radio image.png" alt="radio example" width="550px" />
+              <ul>
+                <h5>The meaning of these attributes</h5>
+                <li><b>type="radio": </b>Creates the circular radio button.</li>
+                <li>
+                  <b>name="shirtSize": </b>This is the critical part. Because
+                  all three have the same name, the browser knows they are a
+                  single group and will only let you select one.
+                </li>
+                <li>
+                  <b>id="sizeS": </b>Each input still needs a unique id so its
+                  specific label can connect to it.
+                </li>
+                <li>
+                  <b>value="small": </b>This is the actual data that will be
+                  sent to the server if this option is selected. If the user
+                  clicks "Small", the form will send shirtSize=small. Without
+                  the value, the data would be meaningless.
+                </li>
+              </ul>
+            </ul>
+            <h4>The Need for "Select Many" - Checkboxes</h4>
+            <ul>
+              <li>
+                Sometimes in a form, the user should be able to select
+                <b>more than one option</b> at the same time. Example: choosing
+                <b>hobbies</b> or <b>interests</b>.
+              </li>
+              <li>
+                For this purpose, HTML provides the <b>checkbox</b> input type.
+              </li>
+              <li>
+                Each checkbox works independently, so users can tick none, one,
+                or multiple options as per their choice.
+              </li>
+              <img
+                src="checkbox image.png"
+                alt="checkbox example"
+                width="600px"
+              />
+              <ul>
+                <h5>The meaning of these attributes</h5>
+                <li><b>type="checkbox": </b>Creates the square checkbox.</li>
+                <li>
+                  <b>name="toppings": </b>All three share this name, telling the
+                  server they are all "toppings".
+                </li>
+                <li>
+                  <b>id="toppingPep": </b>Each has a unique id for its label.
+                </li>
+                <li>
+                  <b>value="pepperoni": </b>Each has a unique value to identify
+                  which topping was chosen.
+                </li>
+              </ul>
+            </ul>
+            <h4>A Better Button - The &lt;button&gt; Element</h4>
+            <ul>
+              <li>
+                In HTML, we can create buttons using
+                <b>&lt;input type="submit"&gt;</b> or
+                <b>&lt;input type="reset"&gt;</b>. But these are limited — they
+                cannot hold rich content like text + icons.
+              </li>
+              <li>
+                The <b>&lt;button&gt;</b> element is more powerful because it
+                can contain <b>text, images, or even HTML</b> inside it.
+                <ul>
+                  <h5>Types of &lt;button&gt;:</h5>
+                  <li><b>type="submit"</b> → submits the form data.</li>
+                  <li><b>type="reset"</b> → resets/clears the form fields.</li>
+                  <li>
+                    <b>type="button"</b> → normal button (can be used with
+                    JavaScript).
+                  </li>
+                  <img
+                    src="button image.png"
+                    alt="button example"
+                    width="550px"
+                  />
+                  <h5>The meaning of these attributes</h5>
+                  <ul>
+                    <li>
+                      <b>&lt;button&gt;: </b>The container for the button.
+                    </li>
+                    <li>
+                      <b>type="submit": </b>This is very important. This
+                      attribute tells the button to act as a form submit button.
+                      (It can also be type="button" for JavaScript or
+                      type="reset").
+                    </li>
+                    <li>
+                      <b>&lt;strong&gt;Submit&lt;/strong&gt;: </b>We can now put
+                      other HTML tags, like &lt;strong&gt; or even an
+                      &lt;img&gt;, right inside our button!
+                    </li>
+                  </ul>
+                </ul>
+              </li>
+            </ul>
+            <h4>
+              The Need for Long-Form Text - &lt;textarea&gt;&lt;/textarea&gt;
+            </h4>
+            <ul>
+              <li>
+                Normal <b>&lt;input type="text"&gt;</b> fields are designed for
+                <b>short answers</b> like names, emails, or phone numbers.
+              </li>
+              <li>
+                But sometimes, users need to enter <b>longer text</b>, such as
+                an address, feedback, or comments.
+              </li>
+              <li>
+                For this, HTML provides the <b>&lt;textarea&gt;</b> element.
+                <h5>Features of &lt;textarea&gt;:</h5>
+                <ul>
+                  <li>It can hold multiple lines of text.</li>
+                  <li>You can set its <b>rows</b> and <b>cols</b> size.</li>
+                  <li>Users can expand/shrink it (in most browsers).</li>
+                </ul>
+              </li>
+              <img
+                src="textarea image.png"
+                alt="textarea example"
+                width="600px"
+              />
+              <li>
+                <b>rows="4": </b>This attribute controls the visible height of
+                the text area, suggesting it should be about 4 lines of text
+                tall.
+              </li>
+              <li>
+                <b>cols="50": </b>This controls the visible width, suggesting it
+                should be about 50 characters wide.
+              </li>
+            </ul>
+            <h4>The Need for Many Options - The Dropdown (&lt;select&gt;)</h4>
+            <ul>
+              <li>
+                Sometimes we need users to choose <b>one option</b> from a
+                <b>large list</b>. Example: selecting a country, course, or year
+                of study.
+              </li>
+              <li>
+                Writing multiple radio buttons for this would be
+                <b>messy and space-consuming</b>.
+              </li>
+              <li>
+                HTML provides the <b>&lt;select&gt;</b> element to create a
+                dropdown menu.
+              </li>
+              <li>
+                Inside a &lt;select&gt;, we use <b>&lt;option&gt;</b> tags to
+                define the available choices.
+              </li>
+              <img src="select image.png" alt="select example" width="600px" />
+              <li>
+                <b>&lt;select&gt;: </b>This is the main container for the
+                dropdown. The id and name attributes go on this tag.
+              </li>
+              <li>
+                <b>&lt;option&gt;: </b>Each individual choice in the dropdown is
+                an &lt;option&gt; tag.
+              </li>
+              <li>
+                <b>value Attribute on &lt;option&gt;: </b>This is the data that
+                gets sent to the server. The text between the tags (India) is
+                what the user sees.
+              </li>
+            </ul>
+            <h3>More Specialized Inputs (HTML5 Power-ups)</h3>
+            <ul>
+              <li>
+                HTML5 introduced many new type attributes for &lt;input&gt; to
+                make forms smarter and more user-friendly.
+              </li>
+              <br />
+            </ul>
+            <li><b>Password Box: </b>Hides the text when typing.</li>
+            <img
+              src="password image.png"
+              alt="password example"
+              width="500px"
+            /><br /><br />
+            <li>
+              <b>Number Input with min and max: </b>Accepts only numbers within
+              the given range (18-60).
+            </li>
+            <img
+              src="number image.png"
+              alt="number example"
+              width="550px"
+            /><br /><br />
+            <li>
+              <b>Date Input: </b>Shows a calendar date picker, making it easier
+              and error-free to select dates.
+            </li>
+            <img
+              src="date image.png"
+              alt="date example"
+              width="550px"
+            /><br /><br />
+            <li><b>Color Input: </b>Opens a color picker to choose a color.</li>
+            <img
+              src="color image.png"
+              alt="color example"
+              width="500px"
+            /><br /><br />
+            <li>
+              <b>Range Input: </b>Creates a slider control (useful for volume,
+              brightness, etc.)
+            </li>
+            <img
+              src="range image.png"
+              alt="range example"
+              width="500px"
+            /><br /><br />
+            <li>
+              <b>File Input: </b>Lets the user upload a file from their device.
+            </li>
+            <img
+              src="file image.png"
+              alt="file example"
+              width="500px"
+            /><br /><br />
+            <li>
+              <b>Required Attribute: </b>Marks a field as mandatory (form won't
+              submit if left empty).
+            </li>
+            <img
+              src="required image.png"
+              alt="required example"
+              width="550px"
+            /><br /><br />
+            <li>
+              <b>Placeholder Attribute: </b>Shows a hint inside the input until
+              the user types something.
+            </li>
+            <img
+              src="placeholder image.png"
+              alt="placeholder example"
+              width="550px"
+            /><br /><br />
+            <li>
+              <b>Telephone Input: </b>Used to enter phone numbers. Some browsers
+              show a number keypad on mobile for easier typing.
+            </li>
+            <img
+              src="tel image.png"
+              alt="tel example"
+              width="600px"
+            /><br /><br />
+          </ol>
+        </li>
+      </ul>
+
+      <a href="miniproject.html" target="_blank">
+        <h2>See My Mini Project</h2>
+      </a>
+    </main>
+
+    <center>
+      <hr />
+      <footer>
+        <p>&copy; 2025 Created by <b>Ranjay</b> | My Notes Project</p>
+      </footer>
+    </center>
+  </body>
 </html>

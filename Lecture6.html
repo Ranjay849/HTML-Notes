@@ -25,7 +25,141 @@
   </nav>
   <hr>
 
+  <main>
+    <h2>HTML Media</h2>
+    <ul>
+      <li>Websites are not just about text and forms.</li>
+      <li>Media (like images, audio, and video) makes web pages interactive and engaging.</li>
+      <li>HTML provides special tags to embed different types of media.
+        <ol>
+          <li><h3>Adding Images - &lt;img&gt;</h3>
+            <ul>
+              <li>The &lt;img&gt; tag is used to display an image on a webpage.</li>
+              <li>It is a self-closing tag and does not require a closing tag.</li><br>
+              <img src="media img image.png" alt="an image" width="920px">
+              <img src="https://marketplace.canva.com/EAF7LBHWGY4/1/0/1600w/canva-neutral-pastel-modern-cute-simple-dog-id-card-yK2J0bHxdZQ.jpg" alt="a dog image" width="350px">
+              <li><b>src → </b>file path or URL of the image.</li>
+              <li><b>alt → </b>alternative text (shown if image doesn't load).</li>
+              <li><b>width/height → </b>resize the image.</li>
+            </ul>
+          </li>
+          <li><h3>Adding Audio - &lt;audio&gt;</h3>
+            <ul>
+              <li>To play an audio file in HTML, we use the &lt;audio&gt; element:</li><br>
+              <img src="media audio image.png" alt="an audio" width="800px">
+              <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              <li><b>controls → </b>adds play, pause, and volume buttons.</li>
+              <li><b>source → </b>provides the audio file.</li>
+            </ul>
+          </li>
+          <li><h3>Adding Video - &lt;video&gt;</h3>
+            <ul>
+              <li>To play a video file in HTML, we use the &lt;video&gt; element:</li><br>
+              <img src="media video image.png" alt="a video" width="850px">
+              <video width="467px" controls>
+                <source src="video file.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <li><b>controls → </b>adds play/pause, timeline, and volume.</li>
+              <li><b>width/height → </b>sets video size.</li>
+              <li><b>Extra options → </b>autoplay, loop, muted</li>
+            </ul>
+          </li>
+          <li><h3>Embedding External Content - &lt;iframe&gt;</h3>
+          <ul>
+            <li>The &lt;iframe&gt; tag is used to embed another webpage inside your webpage.</li>
+            <li>It is commonly used for YouTube videos, Google Maps, advertisements, or forms.</li><br>
+            <img src="media embed image.png" alt="a embed" width="855px">
+            <iframe src="https://www.youtube.com/embed/NGYp1zCBthk?si=MtXdXTxheKd1wAfH" width="400" height="250" frameborder="0" allowfullscreen></iframe>
+            <li><b>&lt;iframe&gt;: </b>Embeds external content (like a YouTube video) on your webpage.</li>
+            <li><b>src="https://www.youtube.com/embed/NGYp1zCBthk?si=MtXdXTxheKd1wAfH": </b>URL of the video to display.</li>
+            <li><b>width="500" height="300": </b>Sets the size of the video frame.</li>
+            <li><b>frameborder="0": </b>Removes the border around the iframe.</li>
+            <li><b>allowfullscreen: </b>Lets the video be viewed in full-screen mode.</li>
+            <li><b>&lt;/iframe&gt;: </b>Closes the iframe element.</li>
+          </ul>
+          </li>
+        </ol>
+      </li>
+    </ul>
+    
+    <h2>Multi-Page Website</h2>
+    <ul>
+      <li>A multipage website is a site made up of multiple linked HTML pages, each showing different information.</li>
+      <li>Each page has its own HTML file (like index.html, about.html, contact.html).</li>
+      <li>Pages are connected to each other using links (&lt;a&gt; tag).</li>
+      <li>Common example: Home, About Us, Services, Contact Us.</li>
+      <li>Used when website has a lot of information, which cannot fit into a single page.</li>
+      <img src="Multipage Diagram.png" alt="Multipage Webpage Diagram" width="400px">
+      <li><b>Example:</b> 
+        <ul>
+          <li><a href="home.html" target="_blank">Home</a></li>
+          <li><a href="about.html" target="_blank">About</a></li>
+          <li><a href="skills.html" target="_blank">Skills</a></li>
+          <li><a href="projects.html" target="_blank">Projects</a></li>
+          <li><a href="services.html" target="_blank">Services</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Deploying a Website on Netlify</h2>
+    <ul>
+      <li>Netlify is a platform to host static websites easily and quickly.</li>
+      <li>It provides free hosting, automatic HTTPS, and continuous deployment from Git repositories.
+        <h3>Steps to Deploy a Website on Netlify</h3>
+        <ul>
+          <li><b>Step 1: </b>Prepare your website files
+            <ul>
+              <li>Ensure your project has an <b>index.html</b> file.</li>
+              <li>Include all CSS, JavaScript, and image files in proper folders.</li>
+            </ul>
+          </li>
+
+          <li><b>Step 2: </b>Create a Netlify account</b>
+            <ul>
+              <li>Sign up at <a href="https://www.netlify.com" target="_blank">Netlify</a> using email or GitHub/GitLab/Bitbucket.</li>
+            </ul>
+          </li>
+
+          <li><b>Step 3: </b>Deploy the website
+            <ul>
+              <li>Click "Add new site" → "Deploy manually".</li>
+              <li>Drag and drop your website folder containing index.html.</li>
+            </ul>
+          </li>
+
+          <li><b>Step 4: </b>Configure your site
+            <ul>
+              <li>Netlify will generate a random URL; you can customize the site name later.</li>
+              <li>Check the site URL to confirm your website is live.</li>
+            </ul>
+          </li>
+
+          <li><b>Step 5: </b>Optional - Connect GitHub for continuous deployment
+            <ul>
+              <li>Link your GitHub repository to Netlify for automatic updates on every push.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <h3>Advantages of Using Netlify</h3>
+      <ul>
+        <li>Free hosting for small projects.</li>
+        <li>Automatic HTTPS (SSL).</li>
+        <li>Simple drag-and-drop deployment.</li>
+        <li>Continuous deployment with Git integration.</li>
+      </ul>
+    </ul>
+
+    <h2><a href="miniproject2.html" target="_blank">See Mini Project</a></h2>
+  </main>
+
   <center>
+    <hr>
     <footer>
       <p>&copy; 2025 Created by <b>Ranjay</b> | My Notes Project</p>
     </footer>
